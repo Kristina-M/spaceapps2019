@@ -7,12 +7,26 @@ const mapStyles = {
     height: '100%'
 };
 
-const triangleCoords = [
-    {lat: 25.774, lng: -80.190},
-    {lat: 18.466, lng: -66.118},
-    {lat: 32.321, lng: -64.757},
-    {lat: 25.774, lng: -80.190}
-];
+const communities = {
+    CommunityC: [
+        {lat: 28.774, lng: -83.190},
+        {lat: 21.466, lng: -69.118},
+        {lat: 35.321, lng: -67.757},
+        {lat: 28.774, lng: -83.190}
+    ],
+    CommunityA: [
+        {lat: 25.774, lng: -80.190},
+        {lat: 18.466, lng: -66.118},
+        {lat: 32.321, lng: -64.757},
+        {lat: 25.774, lng: -80.190}
+    ],
+    CommunityB: [
+        {lat: 31.774, lng: -83.190},
+        {lat: 24.466, lng: -69.118},
+        {lat: 38.321, lng: -67.757},
+        {lat: 31.774, lng: -83.190}
+    ]
+}
 
 export class MapContainer extends Component {
 
@@ -39,6 +53,26 @@ export class MapContainer extends Component {
         })
     }
 
+    displayCommunities = () => {
+        var coords;
+        var key = 1 ;
+        var community_polygons = [];
+        for ( var community in communities){
+            key++;
+            coords = communities[community]
+            community_polygons.push(<Polygon
+                key={key}
+                paths={coords}
+                strokeColor="#ffaa17"
+                strokeOpacity={0.8}
+                strokeWeight={2}
+                fillColor="#ffa640"
+                fillOpacity={0.35} />)
+            console.log(coords)
+        }
+        return community_polygons;
+    }
+
 
     render() {
         return (
@@ -46,19 +80,13 @@ export class MapContainer extends Component {
                 google={this.props.google}
                 zoom={8}
                 style={mapStyles}
-                initialCenter={{lat: -34.397, lng: 150.644 }}>
-                <Polygon
-                    paths={triangleCoords}
-                    strokeColor="#ff4cc6"
-                    strokeOpacity={0.8}
-                    strokeWeight={2}
-                    fillColor="#ff46d2"
-                    fillOpacity={0.35} />
+                mapType={"satellite"}
+                initialCenter={{lat: 26.8, lng: 80.9 }}>
+                {this.displayCommunities()}
                 <Marker
                     position={{ lat: -34.397, lng: 150.644 }}
                 />
             </Map>
-
 
         );
     }
