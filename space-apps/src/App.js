@@ -506,7 +506,7 @@ export class MapContainer extends Component {
                 zoom={15}
                 style={mapStyles}
                 mapType={"satellite"}
-                initialCenter={{lat: 26.998618, lng: 81.529647}}>
+                initialCenter={{lat: 26.998618, lng: 81.554844}}>
                 {this.displayCommunities()}
                 <Marker
                 position={{ lat: 26.8, lng: 81.9 }}
