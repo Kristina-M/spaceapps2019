@@ -503,14 +503,14 @@ export class MapContainer extends Component {
                 </AppBar>
             <Map
                 google={this.props.google}
-                zoom={8}
+                zoom={15}
                 style={mapStyles}
                 mapType={"satellite"}
-                initialCenter={{lat: 26.8, lng: 80.9 }}>
+                initialCenter={{lat: 26.998618, lng: 81.529647}}>
                 {this.displayCommunities()}
                 <Marker
-                    position={{ lat: -34.397, lng: 150.644 }}
-                />
+                position={{ lat: 26.8, lng: 81.9 }}
+            />
             </Map>
             </div>
 
