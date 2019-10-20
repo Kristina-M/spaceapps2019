@@ -11,7 +11,7 @@ This repo contains the following:
 - mask_RCNN - Augmented code from base repo by matterpot - https://github.com/matterport/Mask_RCNN
 
 ## Tech Stack
-![Alt text](techstack.jpg?raw=true "Title")
+![Alt text](stack.png?raw=true "Tech Stack")
 
 
 ## Helping Hands
