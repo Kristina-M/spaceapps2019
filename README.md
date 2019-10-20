@@ -4,7 +4,7 @@ We love the earth it is our home!
 
 ### Challenge: [From Curious Minds Come Helping Hands](https://2019.spaceappschallenge.org/challenges/living-our-world/curious-minds-come-helping-hands/details)
 
-This repo contains the following way:
+This repo contains the following:
 - space-apps contains the react app which display the ML classified communities
 - data-pull includes python scripts for pulling external data sources into elastic search and data prepocessing scripts
 - MLDataset - labelled community dataset from communities in Uttar Pradesh (Labelled during hackathon - used to augment object detection model weights)
