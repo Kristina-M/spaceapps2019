@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d3bfaea5-4143-40ba-9285-bd44d0290f3f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/space-apps/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/space-apps/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/space-apps/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/space-apps/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/space-apps/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/space-apps/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/space-apps/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/space-apps/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +43,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571454402474</updated>
       <workItem from="1571454405018" duration="17313000" />
+      <workItem from="1571556300381" duration="507000" />
     </task>
     <servers />
   </component>
@@ -57,7 +55,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
